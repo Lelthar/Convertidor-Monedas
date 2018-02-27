@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
     tools:context="com.example.gerald.convertidor_monedas.MainActivity">
 
     <TextView
@@ -11,6 +12,7 @@
         android:layout_height="41dp"
         android:gravity="center_vertical|center"
         android:text="Convertir"
+        android:textColor="@android:color/background_light"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -25,6 +27,7 @@
         android:ems="10"
         android:hint="Introduzca el valor"
         android:inputType="number"
+        android:textColor="@android:color/background_light"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -37,8 +40,10 @@
         android:id="@+id/convertirButton"
         android:layout_width="159dp"
         android:layout_height="54dp"
+        android:background="@color/colorPrimary"
         android:onClick="onTextClicked"
         android:text="Convertir"
+        android:textColor="@android:color/background_light"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
@@ -62,6 +67,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Colones a Dolares"
+            android:textColor="@android:color/background_light"
             android:textSize="20sp" />
 
         <RadioButton
@@ -70,6 +76,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Dolares a Colones"
+            android:textColor="@android:color/background_light"
             android:textSize="20sp" />
     </RadioGroup>
 
@@ -77,6 +84,7 @@
         android:id="@+id/salidaTextView"
         android:layout_width="315dp"
         android:layout_height="112dp"
+        android:textColor="@android:color/background_light"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

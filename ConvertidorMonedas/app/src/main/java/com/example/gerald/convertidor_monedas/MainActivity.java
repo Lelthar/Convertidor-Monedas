@@ -9,7 +9,7 @@ import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.TextView;
-
+import android.widget.Toast;
 
 
 import org.ksoap2.SoapEnvelope;
@@ -94,8 +94,12 @@ public class MainActivity extends AppCompatActivity {
                 String mostrar = String.format("Resultado: $%.4f", valor_grados_numerico);
                 salida_textview.setText(mostrar);
 
+            }else{
+                Toast.makeText(this,"Seleccione el tipo de conversión",1000).show();
             }
 
+        }else{
+            Toast.makeText(this,"Introduzca un valor",1000).show();
         }
 
 
